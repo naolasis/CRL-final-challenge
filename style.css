@@ -1,0 +1,452 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+ margin: 0;
+ padding: 0;
+ font-family: sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+  /* opacity: 0.9; */
+    /* position: fixed; */
+    /* width: 100%; */
+
+    header {
+        background:#2E323F;
+        padding: 1em 0;
+        text-align: center;
+    }
+    
+    .nav {
+        width: 100%;
+    }
+    
+    .nav__item{
+        list-style: none;
+        margin-bottom: 1.5rem;
+    
+    }
+    
+    .nav__list--primary{
+        margin-bottom: 5rem;
+    }
+    
+    .nav__link{
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
+        font-size: 18px;
+    }
+    
+    .nav__link--button{
+        padding: .5rem 1.5rem;
+        border-radius: 100px;
+        background-color: #A59678;
+        color: white;
+    }
+    
+    .nav__link:hover,
+    .nav__link:focus{
+        opacity: .75;
+    }
+    
+    .nav-toggle {
+        cursor: pointer;
+        border: 0;
+        width: 3em;
+        height: 3em;
+        padding: 0em;
+        border-radius: 50%;
+        background: #072A2D;
+        color: white;
+        transition: opacity 250ms ease;
+        
+        position: absolute;
+        left: 0;
+    }
+    
+    .nav-toggle:focus,
+    .nav-toggle:hover {
+        opacity: .75;
+    }
+    
+    .hamburger {
+        width: 50%;
+        position: relative;
+    }
+    
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        display: block;
+        margin: 0 auto;
+        height: 3px;
+        background: white;
+    }
+    
+    .hamburger::before,
+    .hamburger::after {
+        content: '';
+        width: 100%;
+    }
+    
+    .hamburger::before {
+        transform: translateY(-6px);
+    }
+    
+    .hamburger::after {
+        transform: translateY(3px);
+    }
+    
+    /* made changes here from video
+       to make it more accessible.
+       
+       Works the same :) */
+    .nav {
+        visibility: hidden;
+        height: 0;
+        position: absolute;
+    }
+    
+    .nav--visible {
+        visibility: visible;
+        height: auto;
+        position: relative;
+    } 
+    
+    
+    .logo {
+        z-index: 1;
+        height: 30px;
+    }
+
+    .logo:hover{
+        opacity: .7;
+    }
+
+
+/* navigation styling ends here */
+
+.primary-section{
+    color: white;
+    background-color:  #3B4050;
+    padding: 6rem 0;
+}
+
+
+
+.primary-header h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 70px;
+    margin: 0;
+}
+
+span,
+.brown{
+    color: #A59678;
+}
+
+
+.secondery-header p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
+
+.secondery-header a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+}
+
+
+/* primary-section ends here */
+
+.secondery-section{
+    background:  #c9c9c5;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.secondery-section h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #A59678;
+}
+
+.secondery-section p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+
+
+/* secondery-section ends here */
+
+.primary-div img{
+    max-width: 100%;
+    margin-top: 2.5rem;
+}
+
+.main-section{
+    padding: 3rem 0;
+}
+
+.primary-div h1{
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+}
+
+.primary-div p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+}
+
+/* --------------------------------------------------------- */
+
+.side-bar{
+    padding: 1rem;
+    background: #3B4050;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.side-bar h3{
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+}
+
+.side-bar .visibility{
+    visibility: hidden;
+}
+
+.side-bar p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+
+/* the main section ends here */
+
+.end-section{
+    background: #3B4050;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.end-section h1{
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+}
+
+.end-section h5{
+    color: #A59678;
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+}
+
+.col1{
+    margin-left: 2.5em;
+}
+
+.col1 p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #6F737F;
+}
+
+.end-section ul li{
+    list-style: none;
+    margin-bottom: 1.3rem;
+}
+
+.end-section a{
+    color: #6F737F;
+    text-decoration: none;
+}
+
+
+/* end section ends here */
+
+@media (min-width: 700px){
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav {
+        visibility: visible;
+        display: flex;
+        height: auto;
+        flex-grow: 1;
+        align-self: center;
+        justify-content: space-between;
+    }
+
+    .nav__list{
+        display: flex;
+    }
+
+    .nav__item{
+        margin-bottom: 0;
+    
+    }
+    
+    .nav__list--primary{
+        margin-bottom: 0;
+        margin: auto;
+    }
+
+    .nav__item + .nav__item{
+        margin-left: 1rem;
+    }
+  
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    /* ------------------------------------ */
+
+    .primary-section-flex{
+        display: flex;
+    }
+
+    .primary-header{
+        width: 45%;
+    }
+
+    .secondery-header{
+        width: 55%;
+        align-self: flex-end;
+    }
+    
+
+    /* --------------------------------- */
+   
+        .primary-div{
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        aside{
+            display: flex;
+            width: 100%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .side-bar{
+            width: 100%;
+        }
+        .side-bar + .side-bar{
+            margin-left: 1em;
+        }
+
+    /* ------------------------------------- */
+
+    .secondery-section-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col{
+        width: 23%;
+    }
+    /* ------------------------------------------ */
+
+    .end-section-flex{
+        display: flex;
+    }
+
+    .col1{
+        width: 33%;
+        margin-right: 7%;
+    }
+    .col2{
+        width: 20%;
+    }
+    .col1{
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 1000px){
+    .flex{
+        display: flex;
+    }
+    aside{
+        display: inline;
+    }
+    .side-bar + .side-bar{
+        margin-left: 0;
+    }
+    .primary-div img{
+        max-width: 100%;
+        margin-top: 2.5rem;
+    }
+    
+    .main-section{
+        padding: 6rem 0;
+    }
+    
+    .primary-div{
+        width: 55%;
+        margin-right: 15%;
+    }
+    
+    .primary-div h1{
+        margin: 0;
+        font-family: 'Oswald', sans-serif;
+        font-size: 36px;
+    }
+    
+    .primary-div p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 21px;
+    }
+    
+    /* -------------------------------------------------------- */
+    
+    
+    aside{
+        width: 40%;
+    
+    }
+    
+    .side-bar{
+        padding: 1rem;
+        background: #3B4050;
+        text-align: center;
+        margin-bottom: 2rem;
+        color: white;
+    }
+    
+    .side-bar h3{
+        font-family: 'Oswald', sans-serif;
+        font-size: 25px;
+    }
+    
+    .side-bar .visibility{
+        visibility: hidden;
+    }
+    
+    .side-bar p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+    }
+}
