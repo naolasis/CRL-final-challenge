@@ -343,6 +343,13 @@ span,
             max-width: 1100px;
             margin: 0 auto;
         }
+
+        .primary-div img{
+            width: 100%; /* Set the width to 100% to make it responsive */
+            max-height: 300px; /* Set the maximum height to your desired height */
+            object-fit: cover;
+            margin-top: 1rem;
+        }
         aside{
             display: flex;
             width: 100%;
